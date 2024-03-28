@@ -47,23 +47,29 @@ function App() {
 
   return (
     <>
-      <div
-        style={{ marginBottom: "10px", display: "flex", alignItems: "center" }}
-      >
-        <h4 style={{ textWrap: "nowrap" }}>Device IP :&nbsp;</h4>{" "}
-        <p>{deviceIp}</p>{" "}
+      <div style={{ marginBottom: "10px", textAlign: "start" }}>
+        <h4
+          style={{
+            textWrap: "nowrap",
+            margin: "0",
+            color: "#0390fc",
+          }}
+        >
+          Device IP :&nbsp;
+        </h4>{" "}
+        <p style={{ margin: "0" }}>{deviceIp}</p>{" "}
       </div>
-      <div
-        style={{ marginBottom: "10px", display: "flex", alignItems: "center" }}
-      >
-        <h4 style={{ textWrap: "nowrap" }}>Device info : &nbsp;</h4>{" "}
-        <p>{deviceInfo}</p>{" "}
+      <div style={{ marginBottom: "10px", textAlign: "start" }}>
+        <h4 style={{ textWrap: "nowrap", margin: "0", color: "#0390fc" }}>
+          Device info : &nbsp;
+        </h4>{" "}
+        <p style={{ margin: "0" }}>{deviceInfo}</p>{" "}
       </div>
-      <div
-        style={{ marginBottom: "10px", display: "flex", alignItems: "center" }}
-      >
-        <h4 style={{ textWrap: "nowrap" }}>Device Type : &nbsp;</h4>{" "}
-        <p>{deviceType}</p>{" "}
+      <div style={{ marginBottom: "10px", textAlign: "start" }}>
+        <h4 style={{ textWrap: "nowrap", margin: "0", color: "#0390fc" }}>
+          Device Type : &nbsp;
+        </h4>{" "}
+        <p style={{ margin: "0" }}>{deviceType}</p>{" "}
       </div>
 
       <button onClick={getDeviceIP}>{reqTxt}</button>
