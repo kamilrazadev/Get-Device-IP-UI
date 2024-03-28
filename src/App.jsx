@@ -6,7 +6,8 @@ import axios from "axios";
 
 function App() {
   const [deviceIp, setDeviceIp] = useState("");
-  const backendUrl = "http://localhost:3000";
+  // const backendUrl = "http://localhost:3000";
+  const backendUrl = "https://get-device-ip-api.vercel.app";
 
   const getDeviceIP = async () => {
     try {
